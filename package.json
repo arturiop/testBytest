@@ -1,11 +1,14 @@
 {
   "name": "app",
   "private": true,
+  "homepage": "https://arturiop.github.io/testBytest",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.7.4",
@@ -24,6 +27,7 @@
     "eslint": "8.7.0",
     "eslint-config-next": "12.0.8",
     "eslint-config-prettier": "^8.3.0",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.5.1",
     "typescript": "4.5.5"
   }
